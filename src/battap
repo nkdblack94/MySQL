@@ -1,0 +1,21 @@
+select masp,tensp from sanpham where nuocsx = "Trung Quoc";
+select masp, tensp from sanpham where dvt = "cay" or dvt = "quyen";
+select masp, tensp from sanpham where masp like "B%01";
+select * from sanpham where gia between 30000 and 40000 and nuocsx = "Trung Quoc";
+select * from sanpham where  (nuocsx = "Trung Quoc" or nuocsx = "Viet Nam") and (gia between 30000 and 40000);
+select sohd, trigia, nghd from hoadon where nghd between "20070101" and "20070102";
+select sohd, trigia, nghd from hoadon where month(nghd) = "1";
+select khachhang.makh, khachhang.hoten from khachhang inner join hoadon where hoadon.makh = khachhang.makh and hoadon.nghd = "20070101";
+select hoadon.sohd, hoadon.trigia, nhanvien.hoten from hoadon join nhanvien
+where nhanvien.manv = hoadon.manv and nhanvien.hoten = "Nguyen Van B" and hoadon.nghd = "20061028";
+select distinct sanpham.masp, sanpham.tensp from sanpham join khachhang, hoadon, cthd
+where sanpham.masp = cthd.masp and khachhang.makh = hoadon.makh
+and khachhang.hoten = "Nguyen Van A" and month(hoadon.nghd) = "10" and year(hoadon.nghd) = "2006";
+select cthd.sohd, cthd.masp from cthd where cthd.masp = "BB01" or cthd.masp = "BB02";
+select cthd.sohd, cthd.masp, cthd.sl from cthd where (cthd.masp = "BB01" or cthd.masp = "BB02") and (cthd.sl between 10 and 20);
+select sohd from cthd where masp = "BB01" and (cthd.sl between 10 and 20)
+and sohd in (select sohd from cthd where masp = "BB02") and (cthd.sl between 10 and 20);
+select sanpham.masp, sanpham.tensp from sanpham, cthd, hoadon where cthd.sohd = hoadon.sohd and sanpham.masp = cthd.masp
+and sanpham.nuocsx = "Trung Quoc" and hoadon.nghd = "20070101";
+select sanpham.masp, sanpham.tensp from sanpham where sanpham.masp not in (select cthd.masp from cthd);
+select sanpham.masp, sanpham.tensp from sanpham where sanpham.masp not in (select cthd.masp from cthd,hoadon where cthd.sohd=hoadon.sohd and year(hoadon.nghd) = "2006") ;

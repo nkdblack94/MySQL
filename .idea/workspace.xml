@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc47059a-ce80-4bd3-b4e2-72e825aa4a4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/battap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/TaoKhoaChinh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/TaoKhoaNgoai" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/70934f7a-8cd6-4eba-b775-0f9e973fb056.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/70934f7a-8cd6-4eba-b775-0f9e973fb056.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c6498278-585a-4e8f-adeb-6a8d1eb9399a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c6498278-585a-4e8f-adeb-6a8d1eb9399a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -52,6 +49,12 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="thuchanhtaokhoachinh: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="thuchanhtaokhoangoai: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
     </expand>
     <select />
   </component>
@@ -89,11 +92,6 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="@localhost [2]: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@6b097dc8" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="@localhost [2]: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="com.intellij.database.console.session.MessageBusSession@cfdaa26" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
@@ -116,38 +114,60 @@
       <workItem from="1595218496692" duration="6943000" />
       <workItem from="1595231730410" duration="7923000" />
       <workItem from="1595295727324" duration="8592000" />
-      <workItem from="1595335793307" duration="1915000" />
+      <workItem from="1595335793307" duration="2780000" />
     </task>
+    <task id="LOCAL-00001" summary="[Thực hành] Tạo khoá chính">
+      <created>1595338490067</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595338490067</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="[Thực hành] Tạo khoá chính" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Thực hành] Tạo khoá chính" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595231803044">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1595231803044" />
-    <state x="455" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595335822548">
+    <state x="455" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595338613495">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="455" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1595335822548" />
-    <state width="905" height="186" key="GridCell.Tab.0.bottom" timestamp="1595338398932">
+    <state x="455" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1595338613495" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1595338488467">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="186" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595338398932" />
-    <state width="905" height="186" key="GridCell.Tab.0.center" timestamp="1595338398932">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1595338488467" />
+    <state width="905" height="186" key="GridCell.Tab.0.bottom" timestamp="1595339300165">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="186" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595338398932" />
-    <state width="905" height="186" key="GridCell.Tab.0.left" timestamp="1595338398932">
+    <state width="905" height="186" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595339300165" />
+    <state width="905" height="186" key="GridCell.Tab.0.center" timestamp="1595339300165">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="186" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595338398932" />
-    <state width="905" height="186" key="GridCell.Tab.0.right" timestamp="1595338398932">
+    <state width="905" height="186" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595339300165" />
+    <state width="905" height="186" key="GridCell.Tab.0.left" timestamp="1595339300165">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="186" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595338398932" />
+    <state width="905" height="186" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595339300165" />
+    <state width="905" height="186" key="GridCell.Tab.0.right" timestamp="1595339300165">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="186" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595339300165" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1595338493301">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1595338493301" />
     <state x="555" y="254" width="326" height="234" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1595297640556">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

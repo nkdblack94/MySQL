@@ -32,6 +32,7 @@
             <name qname="@" />
             <name qname="demo" />
             <name qname="thuchanhtaokhoachinh" />
+            <name qname="thuchanhtaokhoangoai" />
           </node>
         </introspection-scope>
       </schema-mapping>
