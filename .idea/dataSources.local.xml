@@ -31,6 +31,7 @@
           <node kind="schema">
             <name qname="@" />
             <name qname="demo" />
+            <name qname="thuchanhtaokhoachinh" />
           </node>
         </introspection-scope>
       </schema-mapping>
