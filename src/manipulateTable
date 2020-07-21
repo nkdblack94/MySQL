@@ -1,0 +1,39 @@
+create database demo;
+use demo;
+create table contacts (
+    contact_id int(11) not null auto_increment,
+    last_name varchar(50) not null,
+    first_name varchar(30),
+    birthday date,
+    constraint contacts_pk primary key (contact_id)
+);
+select * from contacts;
+
+create table suppliers(
+    supplier_id int(11) not null auto_increment,
+    supplier_name varchar(50) not null,
+    account_rep varchar(30) not null default 'TTB',
+    constraint suppliers_pk primary key (supplier_id)
+);
+select * from suppliers;
+
+alter table contacts add phone varchar(13) not null after birthday,
+    add email varchar(150) not null after phone;
+
+alter table contacts drop phone;
+
+alter table contacts add phone varchar(13) not null after birthday;
+
+alter table contacts modify last_name varchar(100),
+    modify first_name varchar(30);
+
+alter table contacts change column last_name full_name varchar(150);
+
+alter table contacts drop first_name;
+
+select * from student;
+
+alter table contacts rename to student;
+
+alter table student change  column contact_id student_id varchar(15);
+
