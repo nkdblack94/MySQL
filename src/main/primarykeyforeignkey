@@ -1,0 +1,23 @@
+create table customers(
+    id int auto_increment primary key,
+    fullName varchar(150) not null,
+    address varchar(150),
+    email varchar(150) not null unique,
+    phone varchar(13) unique
+);
+create table accounts(
+    id varchar(150) not null primary key,
+    account_type varchar(50) not null,
+    date date,
+    balance long,
+    customer_id int unique,
+    foreign key (customer_id) references customers(id)
+);
+create table Transactions(
+    tra_number varchar(50) not null,
+    account_id varchar(150),
+    date date,
+    amounts long,
+    descriptions varchar(255),
+    foreign key (account_id) references accounts(id)
+);
