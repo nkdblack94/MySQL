@@ -1,0 +1,36 @@
+create database libraryManager;
+use libraryManager;
+create table students(
+    id varchar(15) not null primary key,
+    fullName varchar(150) not null,
+    birthDay date,
+    address varchar(255),
+    email varchar(150),
+    phone varchar(13),
+    image varchar(255)
+);
+
+create table books(
+    id varchar(15) primary key,
+    bookName varchar(150) not null,
+    publisher varchar(150),
+    author varchar(150),
+    publishTime int,
+    publishYear date,
+    quantity int not null,
+    price int,
+    image varchar(255),
+    bookCategory varchar(150)
+);
+
+create table borrowedBooks(
+    borrowed int primary key,
+    student_id varchar(15) not null,
+    book_id varchar(15) not null,
+    borrowedDate date,
+    returnDate date,
+    foreign key (student_id) references students(id),
+    foreign key (book_id) references books(id)
+);
+
+select * from borrowedBooks join students where students.id = borrowedBooks.student_id and students.id = 'NTT' and borrowedBooks.book_id = 'AA01';

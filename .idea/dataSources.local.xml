@@ -34,6 +34,7 @@
             <name qname="thuchanhtaokhoachinh" />
             <name qname="thuchanhtaokhoangoai" />
             <name qname="baitapkhoachinhkhoangoai" />
+            <name qname="librarymanager" />
           </node>
         </introspection-scope>
       </schema-mapping>
