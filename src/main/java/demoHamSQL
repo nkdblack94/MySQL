@@ -1,0 +1,15 @@
+create database hamSQL_DB;
+use hamSQL_DB;
+create table demoHamSQL(
+    id int auto_increment primary key,
+    ten varchar(150) not null,
+    tuoi int not null,
+    khoahoc varchar(15) not null,
+    sotien  int not null
+);
+
+insert into demoHamSQL (ten, tuoi, khoahoc, sotien) value ('HUONG', 20, 'TCNH', 200000);
+
+select * from demoHamSQL where ten = 'HUONG';
+select *, sum(sotien) from demoHamSQL where ten = 'HUONG' group by (ten);
+select * from demoHamSQL group by (ten);

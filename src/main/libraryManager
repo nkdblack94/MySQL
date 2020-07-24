@@ -33,4 +33,5 @@ create table borrowedBooks(
     foreign key (book_id) references books(id)
 );
 
-select * from borrowedBooks join students where students.id = borrowedBooks.student_id and students.id = 'NTT' and borrowedBooks.book_id = 'AA01';
+select * from borrowedBooks join students where students.id = borrowedBooks.student_id
+and students.id = 'NTT' and borrowedBooks.book_id = 'AA01';

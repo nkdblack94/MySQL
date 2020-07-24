@@ -1,0 +1,78 @@
+create database productDB;
+use productDB;
+create table customers(
+    customerCode varchar(50) primary key,
+    fullName varchar(150) not null,
+    phone varchar(13),
+    address varchar(255),
+    employee_id varchar(50),
+    foreign key (employee_id) references employees(employeeCode)
+);
+
+create table productsLine(
+    productLineCode varchar(150) primary key,
+    textDescription text,
+    image varchar(255)
+);
+
+create table products(
+    productsCode varchar(50) primary key,
+    productName varchar(150) not null,
+    supplier varchar(100) not null,
+    productDescription text,
+    quantity int not null,
+    entryPrice int not null,
+    price int not null,
+    productLine_id varchar(50),
+    foreign key (productLine_id) references productsLine(productLineCode)
+);
+
+create table orders(
+    orderCode int auto_increment primary key,
+    orderDate date not null,
+    deliverySate date not null,
+    shippedDate date,
+    quantity int not null,
+    status boolean not null,
+    comments text,
+    unitPrice int not null,
+    customer_id varchar(50),
+    product_id varchar(50),
+    foreign key (customer_id) references customers(customerCode),
+    foreign key (product_id) references products(productsCode)
+);
+
+create table orderDetails(
+    orderDetailsCode int auto_increment primary key,
+    customer_id varchar(50),
+    product_id varchar(50),
+    foreign key (customer_id) references customers(customerCode),
+    foreign key (product_id) references products(productsCode)
+);
+
+create table payments(
+    paymentCode varchar(50) primary key,
+    paymentDate date not null,
+    price int not null,
+    customer_id varchar(50),
+    foreign key (customer_id) references customers(customerCode)
+);
+
+create table employees(
+    employeeCode varchar(50) primary key,
+    fullName varchar(100) not null,
+    address varchar(150),
+    email varchar(255),
+    position varchar(155) not null,
+    reportTo varchar(50),
+    office_id varchar(50),
+    foreign key (reportTo) references employees(employeeCode),
+    foreign key (office_id) references offices(OfficesCode)
+);
+
+create table offices(
+    OfficesCode varchar(50) primary key,
+    address varchar(150) not null,
+    phone varchar(13) not null,
+    nation varchar(50)
+);

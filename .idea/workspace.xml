@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc47059a-ce80-4bd3-b4e2-72e825aa4a4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/libraryManager" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/productManager" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c6498278-585a-4e8f-adeb-6a8d1eb9399a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c6498278-585a-4e8f-adeb-6a8d1eb9399a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/libraryManager" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/libraryManager" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,14 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost [2]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="librarymanager: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="hamsql_db: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="hamsql_db: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="demohamsql: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -85,7 +93,12 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="@localhost [2]: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@2726fa0b" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@6afdef9c" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="@localhost [2]: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4fc2730f" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -108,7 +121,9 @@
       <workItem from="1595231730410" duration="7923000" />
       <workItem from="1595295727324" duration="8592000" />
       <workItem from="1595335793307" duration="3368000" />
-      <workItem from="1595380851875" duration="13397000" />
+      <workItem from="1595380851875" duration="15909000" />
+      <workItem from="1595466360669" duration="19804000" />
+      <workItem from="1595554518753" duration="969000" />
     </task>
     <task id="LOCAL-00001" summary="[Thực hành] Tạo khoá chính">
       <created>1595338490067</created>
@@ -131,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595385748184</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[Bài tập] Thiết kế và cài đặt CSDL cho ứng dụng Quản lý thư viện - P1">
+      <created>1595408432868</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595408432868</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,44 +165,49 @@
     <MESSAGE value="[Thực hành] Tạo khoá chính" />
     <MESSAGE value="[Thực hành] Tạo khoá ngoai" />
     <MESSAGE value="[Bài tập] Xác định khoá chính và khoá ngoại của bảng" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Bài tập] Xác định khoá chính và khoá ngoại của bảng" />
+    <MESSAGE value="[Bài tập] Thiết kế và cài đặt CSDL cho ứng dụng Quản lý thư viện - P1" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Bài tập] Thiết kế và cài đặt CSDL cho ứng dụng Quản lý thư viện - P1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595231803044">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1595231803044" />
-    <state x="455" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595408388281">
+    <state x="455" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595555555284">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="455" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1595408388281" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1595385747571">
+    <state x="455" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1595555555284" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1595408432095">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1595385747571" />
-    <state width="905" height="99" key="GridCell.Tab.0.bottom" timestamp="1595408315930">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1595408432095" />
+    <state width="905" height="237" key="GridCell.Tab.0.bottom" timestamp="1595555585645">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="99" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595408315930" />
-    <state width="905" height="99" key="GridCell.Tab.0.center" timestamp="1595408315930">
+    <state width="905" height="237" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595555585645" />
+    <state width="905" height="237" key="GridCell.Tab.0.center" timestamp="1595555585645">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="99" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595408315930" />
-    <state width="905" height="99" key="GridCell.Tab.0.left" timestamp="1595408315930">
+    <state width="905" height="237" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595555585645" />
+    <state width="905" height="237" key="GridCell.Tab.0.left" timestamp="1595555585645">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="99" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595408315930" />
-    <state width="905" height="99" key="GridCell.Tab.0.right" timestamp="1595408315930">
+    <state width="905" height="237" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595555585645" />
+    <state width="905" height="237" key="GridCell.Tab.0.right" timestamp="1595555585645">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="99" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595408315930" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1595385750850">
+    <state width="905" height="237" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595555585645" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1595408437284">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1595385750850" />
-    <state x="555" y="254" width="326" height="234" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1595406505368">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1595408437284" />
+    <state x="555" y="254" width="326" height="234" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1595474226789">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="555" y="254" width="326" height="234" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1595406505368" />
+    <state x="555" y="254" width="326" height="234" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1595474226789" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1595488315947">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1595488315947" />
   </component>
 </project>
